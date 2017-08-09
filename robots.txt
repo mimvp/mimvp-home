@@ -1,0 +1,5 @@
+# robots.txt from mimvp.com
+User-agent: *
+Allow: /
+Sitemap: http://mimvp.com/sitemap.xml
+Sitemap: http://mimvp.com/sitemap.html

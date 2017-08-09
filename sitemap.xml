@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://mimvp.com/</loc>
+		<priority>1</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2017-08-09T01:05:02+08:00</lastmod>
+	</url>
+	<url>
+		<loc>http://mimvp.com/hr.php</loc>
+		<priority>1</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2017-08-09T01:05:02+08:00</lastmod>
+	</url>
+	<url>
+		<loc>http://mimvp.com/index.php</loc>
+		<priority>1</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2017-08-09T01:05:02+08:00</lastmod>
+	</url>
+	<url>
+		<loc>http://mimvp.com/robots.txt</loc>
+		<priority>1</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2017-08-09T01:05:02+08:00</lastmod>
+	</url>
+</urlset>
