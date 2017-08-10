@@ -243,6 +243,8 @@ mimvp-home 项目里，包含两个文件：sitemap.php 和 sitemap.xsi
 
 ##### 2. sitemap.xsi + sitemap.xml 创建生成 sitemap.html 文件
 
+sitemap 创建网站地图，详见米扑科技的开源项目 : [mimvp-sitemap-php](https://github.com/mimvp/mimvp-sitemap-php)
+
 <br/>
 
 ### 1. 生成 sitemap.xml 文件
@@ -374,6 +376,31 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 
 技术细节知识
 ----------
+
+### 细节1. 顶部菜单导航
+
+<br/>
+
+
+### 细节2. 米扑产品布局
+
+
+<br/>
+
+
+### 细节3. 企业客户布局
+
+
+<br/>
+
+
+### 细节4. 关注图标布局
+
+
+<br/>
+
+
+### 细节5. 舍弃地图位置
 
 
 <br/>      
