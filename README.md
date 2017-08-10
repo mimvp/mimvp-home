@@ -58,7 +58,7 @@ mimvp-home 主要解决了快速搭建企业官网，灵活适配PC电脑、iPad
 米扑科技
 ----------
 
-![logo.png](./img/logo.png)
+![mimvp-logo.png](./img/mimvp-logo.png)
 
 <a href="http://mimvp.com" target="_blank">http://mimvp.com</a>
 
