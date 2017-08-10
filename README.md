@@ -237,6 +237,133 @@ require "mimvp_header.php";
 
 创建网站地图
 ----------
+mimvp-home 项目里，包含两个文件：sitemap.php 和 sitemap.xsi
+
+1. sitemap.php 创建生成 sitemap.xml 文件
+2. sitemap.xsi + sitemap.xml 创建生成 sitemap.html 文件
+
+<br/>
+
+### 1. 生成 sitemap.xml 文件
+
+##### 全局变量配置
+```php
+// 全局变量，G开头
+$GCONFIG = array("domain"=>"http://mimvp.com",
+		"xmlfile"=>"sitemap",
+		"htmlfile"=>"sitemap.html",
+		"xslfile"=>"sitemap-xml.xsl",
+		"isopen_xmlfile"=>true,
+		"isopen_htmlfile"=>true,
+		"isscanrootpath"=>true,
+		"isxsl2html"=>true,
+		"isschemamore"=>true);
+```
+
+##### 生成 sitemap.xml 文件
+```php
+createSitemap();	// 主函数
+
+/**
+ * 创建sitemap.xml
+ * @param array $itemsArray2
+ */
+function createSitemap() {
+	global $GCONFIG;
+	global $GIncludeArray;
+	global $GExcludeArray;
+	global $GPriorityArray;
+	
+	//  是否扫描当前根目录
+	$scanRootPathArray = array();
+	if($GCONFIG['isscanrootpath']) {
+		$scanRootPathArray = scanRootPath();
+		var_dump($scanRootPathArray);
+	}
+	// 合并多个数组
+	$itemsArray2 = mergeItems($GIncludeArray, $GExcludeArray, $scanRootPathArray);
+	
+	$sitemap = new Sitemap($GCONFIG['domain']);			// http://mimvp.com
+	$sitemap->setXmlFile($GCONFIG['xmlfile']);			// 设置xml文件（可选）
+	$sitemap->setDomain($GCONFIG['domain']);				// 设置自定义的根域名（可选）
+	$sitemap->setIsChemaMore($GCONFIG['isschemamore']);	// 设置是否写入额外的Schema头信息（可选）
+	
+	
+	// 生成sitemap item
+	$idx = 0;
+	foreach ($itemsArray2 as $item) {
+		$idx += 1;
+		echo "$idx  ---  $item<br>";
+		$priority = $GPriorityArray[substr_count($item, "/")];
+		$sitemap->addItem($item, $priority, "daily", time());
+	}
+	
+	$sitemap->endSitemap();
+	
+	// 是否打开生成的文件： sitemap.xml
+	if($GCONFIG['isopen_xmlfile']) {
+		echo "<script>window.open('".$sitemap->getCurrXmlFileFullPath()."')</script>";
+		echo "<br>Create sitemap.xml Success";
+	}
+	
+	// 是否xml转html文件
+	if($GCONFIG['isxsl2html']) {
+		createXSL2Html($sitemap->getCurrXmlFileFullPath(), $GCONFIG['xslfile'], $GCONFIG['htmlfile']);
+	}
+	
+	// 是否打开生成的文件 sitemap.html
+	if($GCONFIG['isopen_htmlfile']) {
+		echo "<script>window.open('".$GCONFIG['htmlfile']."')</script>";
+		echo "<br>Create sitemap.html Success";
+	}
+}
+```
+
+
+### 2. 生成 sitemap.html 文件
+```php
+/**
+ * 转化 xml + xsl 为 html 
+ * @param unknown $xmlFile		sitemap.xml 源文件
+ * @param unknown $xslFile		sitemap-xml.xsl 源文件
+ * @param unknown $htmlFile		sitemap.html 生成文件
+ * @param string $isopen_htmlfile	是否打开生成文件 sitemap.html
+ */
+function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
+	
+	header("Content-Type: text/html; charset=UTF-8");
+	$xml = new DOMDocument();
+	$xml->Load($xmlFile);
+	$xsl = new DOMDocument();
+	$xsl->Load($xslFile);
+	$xslproc = new XSLTProcessor();
+	$xslproc->importStylesheet($xsl);
+// 	echo $xslproc->transformToXML($xml);
+	
+	$f = fopen($htmlFile, 'w+');
+	fwrite($f, $xslproc->transformToXML($xml));
+	fclose($f);
+	
+	// 是否打开生成的文件 sitemap.html
+	if($isopen_htmlfile) {
+		echo "<script>window.open('".$htmlFile."')</script>";
+		echo "<br>Create sitemap.html Success";
+	}
+}
+```
+
+<br/>
+
+
+#### 地图示例（sitemap）
+
+* 米扑科技 sitemap.xml : [http://mimvp.com/sitemap.xml](http://mimvp.com/sitemap.xml)
+
+* 米扑科技 sitemap.html : [http://mimvp.com/sitemap.html](http://mimvp.com/sitemap.html)
+
+* 米扑代理 sitemap.xml : [http://proxy.mimvp.com/sitemap.xml](http://proxy.mimvp.com/sitemap.xml)
+
+* 米扑代理 sitemap.html : [http://proxy.mimvp.com/sitemap.html](http://proxy.mimvp.com/sitemap.html)
 
 
 
