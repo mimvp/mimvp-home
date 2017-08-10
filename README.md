@@ -116,8 +116,9 @@ iPhone手机端，宽度访问小于640px，符合主流手机尺寸，例如：
 
 网页分层设计
 ----------
-### 米扑科技主页，设计成了头部（mimvp_header.php）、正文（index.php、hr.php）、脚部（mimvp_footer.php）三层结构
-### 这样设计的优点：结构统一、样式布局、网站统计、开发维护等，非常方便快捷。
+米扑科技主页，设计成了头部（mimvp_header.php）、正文（index.php、hr.php）、脚部（mimvp_footer.php）三层结构
+
+这样设计的优点：结构统一、样式布局、网站统计、开发维护等，非常方便快捷。
 
 ```php
 require "mimvp_header.php";
@@ -127,7 +128,6 @@ require "mimvp_header.php";
 </div>
 
 <?php include 'mimvp_footer.php'; ?>
-<script type="text/javascript" src="/js/mimvp-1.0.5.min.js"></script>
 ```
 
 <br/>
