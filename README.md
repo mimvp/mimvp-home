@@ -8,6 +8,14 @@ mimvp-home 主要解决了快速搭建企业官网，灵活适配PC电脑、iPad
 ### 米扑科技官网： [http://mimvp.com](http://mimvp.com)
 
 
+<br/>
+<br/>
+
+
+米扑官网示例
+----------
+
+
 
 <br/>
 <br/>
@@ -50,7 +58,7 @@ mimvp-home 主要解决了快速搭建企业官网，灵活适配PC电脑、iPad
 米扑科技
 ----------
 
-![mimvp-logo.png](https://github.com/mimvp/sitemap-php/blob/master/img/mimvp-logo.png)
+![mimvp-logo.png](https://github.com/mimvp/sitemap-php/blob/master/img/logo.png)
 
 <a href="http://mimvp.com" target="_blank">http://mimvp.com</a>
 
