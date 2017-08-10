@@ -576,18 +576,43 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 
 ### 细节4. 关注图标布局
 
+米扑科技主页下方的"联系我们"的关注图标，需要自己通过Photoshop进行切图，并贴上链接，小图标美观，最有成就感的！
+```html
+<div class="about contact_us" style="margin-top:10px; line-height: 36px;">
+	<div style="float: left;">关注：</div>
+	<div class="about contact_us" style="float: left; line-height: 30px; vertical-align: middle;">
+		<a target="_blank" href="http://blog.mimvp.com"><i><img class="img" src="/img/follow_mimvp.png"></i></a> 
+		<a target="_blank" href="http://blog.csdn.net/ithomer"><i><img class="img" src="/img/follow_csdn.png"></i></a>
+		<a target="_blank" href="http://git.oschina.net/mimvp_admin"><i><img class="img" src="/img/follow_oschina.png"></i></a>
+		<a target="_blank" href="https://github.com/mimvp"><i><img class="img" src="/img/follow_github.png"></i></a>
+		<a><i><img class="img" src="/img/follow_wechat.png" onclick="wechat_mimvp_method()" title="米扑公众号：mi_mvp"></i></a>
+	</div>
+	<div class="nav-clear"></div>
+</div>
+```
 
 <br/>
 
 
 ### 细节5. 舍弃地图位置
-
+米扑科技主页下方的"联系我们"的地图位置，在iPad平板和iPhone手机端，都不好布局显示，引起不重要，故直接舍弃。
 
 <br/>
 
 
-### 细节6. 锚点位置切换
+### 细节6. 压缩css和js
+通常在开发时，css和js文件需要格式化，方便查看代码逻辑；一旦发布到线上，最好压缩混淆css和js
+css和js，最好加上版本号，一来方便代码维护，二来解决客户端浏览器缓存的问题
 
+米扑科技设计的css和js规范：
+
+* css/mimvp-1.0.1.css               // 开发用
+
+* css/mimvp-1.0.1.min.css           // 线上用
+
+* js/mimvp-1.0.1.js                 // 开发用
+
+* js/mimvp-1.0.1.min.js             // 线上用
 
 
 <br/>      
