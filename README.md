@@ -288,7 +288,7 @@ function createSitemap() {
 	
 	$sitemap = new Sitemap($GCONFIG['domain']);			// http://mimvp.com
 	$sitemap->setXmlFile($GCONFIG['xmlfile']);			// 设置xml文件（可选）
-	$sitemap->setDomain($GCONFIG['domain']);				// 设置自定义的根域名（可选）
+	$sitemap->setDomain($GCONFIG['domain']);			// 设置自定义的根域名（可选）
 	$sitemap->setIsChemaMore($GCONFIG['isschemamore']);	// 设置是否写入额外的Schema头信息（可选）
 	
 	
@@ -483,25 +483,25 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 /* PC端为3列 */
 @media(min-width:1280px) {
 	.col-product {
-		width: 33.33%;
-		float: left;
-		line-height: 24px;
+	    width: 33.33%;
+	    float: left;
+	    line-height: 24px;
 	}
 }
 
 /* iPad平板端为2列 */
 @media(max-width:1280px) and (min-width:640px) {
 	.col-product {
-		width: 50%;
-		float: left;
-		line-height: 24px;
+	    width: 50%;
+	    float: left;
+	    line-height: 24px;
 	}
 }
 
 /* iPhone手机端为1列 */
 @media(max-width:640px) {
 	.col-product {
-		width: 100%;
+	    width: 100%;
 	}
 }
 ```
@@ -517,11 +517,11 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 @media(min-width:1280px) {
 	.client-friends {
 	    height: 220px;
-		background-color: #f5f5f5;
+	    background-color: #f5f5f5;
 	}
 	
 	.friend-links {
-		width: 1000px;
+	    width: 1000px;
 	}
 	
 	.client-friends ul.friend-links li {
@@ -536,11 +536,11 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 @media(max-width:1280px) and (min-width:640px) {
 	.client-friends{
 	    height: 280px;
-		background-color: #f5f5f5;
+	    background-color: #f5f5f5;
 	}
 	
 	.friend-links {
-		width: 700px;
+	    width: 700px;
 	}
 	
 	.client-friends ul.friend-links li {
@@ -555,11 +555,11 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 @media(max-width:640px) {
 	.client-friends {
 	    height: 490px;
-		background-color: #f5f5f5;
+	    background-color: #f5f5f5;
 	}
 	
 	.friend-links {
-		width: 300px;
+	    width: 300px;
 	}
 	
 	.client-friends ul.friend-links li {
@@ -608,9 +608,9 @@ css和js，最好加上版本号，一来方便代码维护，二来解决客户
 
 * css/mimvp-1.0.1.css               // 开发用
 
-* css/mimvp-1.0.1.min.css           // 线上用
+* css/mimvp-1.0.1.min.css         // 线上用
 
-* js/mimvp-1.0.1.js                 // 开发用
+* js/mimvp-1.0.1.js                   // 开发用
 
 * js/mimvp-1.0.1.min.js             // 线上用
 
