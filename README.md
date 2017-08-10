@@ -477,13 +477,99 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 
 
 ### 细节2. 米扑产品布局
+米扑产品布局，PC端为3列，iPad平板端为2列，iPhone手机端为1列，全部通过@media宽度切换
 
+```css
+/* PC端为3列 */
+@media(min-width:1280px) {
+	.col-product {
+		width: 33.33%;
+		float: left;
+		line-height: 24px;
+	}
+}
+
+/* iPad平板端为2列 */
+@media(max-width:1280px) and (min-width:640px) {
+	.col-product {
+		width: 50%;
+		float: left;
+		line-height: 24px;
+	}
+}
+
+/* iPhone手机端为1列 */
+@media(max-width:640px) {
+	.col-product {
+		width: 100%;
+	}
+}
+```
 
 <br/>
 
 
 ### 细节3. 企业客户布局
+企业客户布局，企业客户图标总有12个，PC端为2行6列，iPad平板端为3行4列，iPhone手机端为6行2列，全部通过@media切换宽度和高度
 
+```css
+/* PC端为2行6列 */
+@media(min-width:1280px) {
+	.client-friends {
+	    height: 220px;
+		background-color: #f5f5f5;
+	}
+	
+	.friend-links {
+		width: 1000px;
+	}
+	
+	.client-friends ul.friend-links li {
+	    float: left;
+	    margin: 10px 10px;
+	    line-height: 1.5em;
+	    display: list-item;
+	}
+}
+
+/* iPad平板端为3行4列 */
+@media(max-width:1280px) and (min-width:640px) {
+	.client-friends{
+	    height: 280px;
+		background-color: #f5f5f5;
+	}
+	
+	.friend-links {
+		width: 700px;
+	}
+	
+	.client-friends ul.friend-links li {
+	    float: left;
+	    margin: 10px 10px;
+	    line-height: 1.5em;
+	    display: list-item;
+	}
+}
+
+/* iPhone手机端为6行2列 */
+@media(max-width:640px) {
+	.client-friends {
+	    height: 490px;
+		background-color: #f5f5f5;
+	}
+	
+	.friend-links {
+		width: 300px;
+	}
+	
+	.client-friends ul.friend-links li {
+	    float: left;
+	    margin: 10px 5px;
+	    line-height: 1.5em;
+	    display: list-item;
+	}
+}
+```
 
 <br/>
 
