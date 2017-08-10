@@ -379,6 +379,100 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 
 ### 细节1. 顶部菜单导航
 
+由于PC电脑端和iPad/iPhone移动端的顶部菜单导航样式不一样，为了便于维护，分别做了两套菜单导航，通过@media检测宽度切换
+
+##### 电脑端菜单导航
+```html
+<nav class="header-nav">
+	<div class="nav-logo">
+    	<a href="/">
+			<img alt="mimvp-logo" src="/img/logo.png" width="44" height="36">
+  		</a>
+	</div>
+	<div class="nav-title">
+		<ul id="nav-ul"> 
+			<li> 
+				<a class="header-nav-item" href="/">首页</a> 
+			</li>
+			<li> 
+				<a class="header-nav-item" target="_blank" href="http://proxy.mimvp.com">米扑代理</a> 
+			</li>
+			<li> 
+				<a class="header-nav-item" target="_blank" href="http://domain.mimvp.com">米扑域名</a> 
+			</li>
+			<li> 
+				<a class="header-nav-item" target="_blank" href="http://pay.mimvp.com">米扑支付</a> 
+			</li>
+			<li> 
+				<a class="header-nav-item" target="_blank" href="http://money.mimvp.com">米扑财富</a> 
+			</li>
+			<li> 
+				<a class="header-nav-item" target="_blank" href="http://blog.mimvp.com">米扑博客</a> 
+			</li>
+			<li> 
+				<a class="header-nav-item" href="/hr.php">加入米扑</a> 
+			</li>
+		</ul> 
+	</div> 
+	<div class="nav-clear"></div>
+</nav>
+```
+
+##### 移动端菜单导航
+```html
+<nav class="header-nav-mobile">
+	<div class="nav-logo">
+    	<a href="/">
+			<img alt="mimvp-logo" src="/img/logo2.png" width="44" height="36">
+  		</a>
+	</div>
+	<div class="nav-title">
+		<ul id="nav-ul"> 
+			<li> 
+				<a class="header-nav-item header-nav-item-mimvp" href="/">米扑科技</a> 
+			</li>
+			<li style="float: right;"> 
+				<a id="hidemenu-btn" class="hidemenu-btn header-nav-item" href="#" onclick="hidemenu_btn_click()">
+					 <div class="hidemenu-icon">
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+					 </div>
+				</a> 
+				<ul id="hidemenu" class="hidemenu" style="display: none;"> 
+					<a class="header-nav-item" target="_blank" href="http://proxy.mimvp.com">米扑代理</a> 
+					<a class="header-nav-item" target="_blank" href="http://domain.mimvp.com">米扑域名</a> 
+					<a class="header-nav-item" target="_blank" href="http://pay.mimvp.com">米扑支付</a> 
+					<a class="header-nav-item" target="_blank" href="http://money.mimvp.com">米扑财富</a>
+					<a class="header-nav-item" target="_blank" href="http://blog.mimvp.com">米扑博客</a> 
+					<a class="header-nav-item" href="/hr.php">加入米扑</a> 
+				</ul> 
+			</li> 
+		</ul> 
+	</div> 
+	<div class="nav-clear"></div>
+</nav>
+```
+
+##### @media宽度切换
+```css
+/* PC电脑端，隐藏移动端的菜单导航 */
+@media(min-width:1280px) {
+    .header-nav-mobile{display:none}
+}
+
+/* 移动端，隐藏PC电脑端的菜单导航 */
+@media(max-width:1280px) and (min-width:640px) {
+    .header-nav{display:none}
+}
+
+/* 移动端，隐藏PC电脑端的菜单导航 */
+@media(max-width:640px) {
+    .header-nav{display:none}
+}
+```
+
+
 <br/>
 
 
@@ -401,6 +495,13 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 
 
 ### 细节5. 舍弃地图位置
+
+
+<br/>
+
+
+### 细节6. 锚点位置切换
+
 
 
 <br/>      
