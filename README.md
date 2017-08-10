@@ -239,8 +239,9 @@ require "mimvp_header.php";
 ----------
 mimvp-home 项目里，包含两个文件：sitemap.php 和 sitemap.xsi
 
-1. sitemap.php 创建生成 sitemap.xml 文件
-2. sitemap.xsi + sitemap.xml 创建生成 sitemap.html 文件
+##### 1. sitemap.php 创建生成 sitemap.xml 文件
+
+##### 2. sitemap.xsi + sitemap.xml 创建生成 sitemap.html 文件
 
 <br/>
 
@@ -319,6 +320,7 @@ function createSitemap() {
 }
 ```
 
+<br/>
 
 ### 2. 生成 sitemap.html 文件
 ```php
@@ -355,7 +357,7 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 <br/>
 
 
-#### 地图示例（sitemap）
+### 3. 地图示例（sitemap）
 
 * 米扑科技 sitemap.xml : [http://mimvp.com/sitemap.xml](http://mimvp.com/sitemap.xml)
 
@@ -366,13 +368,13 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 * 米扑代理 sitemap.html : [http://proxy.mimvp.com/sitemap.html](http://proxy.mimvp.com/sitemap.html)
 
 
-
 <br/>
 <br/>
 
 
 技术细节知识
 ----------
+
 
 <br/>      
 <br/>      
