@@ -133,6 +133,8 @@ require "mimvp_header.php";
 <br/>
 
 ### 1. 头部（mimvp_header.php）
+头部，主要是定义meta、title、引入css 和 js，以及定义顶部导航栏、自适配PC、iPad、iPhone等多端设备。
+
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -183,6 +185,8 @@ if (strpos ( $reqUrl, 'index.php' ) > 0) {
 
 
 ### 2. 正文（index.php、hr.php）
+正文，显示网页的主要内容，例如：产品介绍、产品价格、企业客户、客户服务等信息。
+
 ```php
 require "mimvp_header.php";
 
@@ -201,6 +205,8 @@ require "mimvp_header.php";
 
 
 ### 3. 脚部（mimvp_footer.php）
+底部，主要是加载网站统计代码、包含企业版权、引入不重要的js、插入网站地图等。
+
 ```html
 <div class="mimvp-footer">
 	<div class="allright">
