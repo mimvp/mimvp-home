@@ -14,6 +14,20 @@ mimvp-home 主要解决了快速搭建企业官网，灵活适配PC电脑、iPad
 
 米扑官网示例
 ----------
+### 1. PC电脑端
+<img src="./img/mimvp-home-pc.png" >
+
+<br/>
+
+### 2. iPad平板端
+<img src="./img/mimvp-home-ipad.png" >
+
+<br/>
+
+### 3. iPhone手机端
+<img src="./img/mimvp-home-iphone.png" >
+
+
 
 
 
