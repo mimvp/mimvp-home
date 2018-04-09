@@ -1,11 +1,11 @@
 米扑科技主页（mimvp-home）
 ----------
 
-mimvp-home 是米扑科技企业官网的开源项目，由北京米扑科技有限公司([mimvp.com](http://mimvp.com))原创分享。
+mimvp-home 是米扑科技企业官网的开源项目，由北京米扑科技有限公司([mimvp.com](https://mimvp.com))原创分享。
 
 mimvp-home 主要解决了快速搭建企业官网，灵活适配PC电脑、iPad平板、iPhone手机等多端屏幕大小的技术，分层设计页面头部、脚部、正文的模块，自动化创建sitemap网站地图等，旨在帮助中小企业快速构建自己的官方网站。
 
-### 米扑科技官网： [http://mimvp.com](http://mimvp.com)
+### 米扑科技官网： [https://mimvp.com](https://mimvp.com)
 
 
 <br/>
@@ -361,13 +361,13 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 
 ### 3. 地图示例（sitemap）
 
-* 米扑科技 sitemap.xml : [http://mimvp.com/sitemap.xml](http://mimvp.com/sitemap.xml)
+* 米扑科技 sitemap.xml : [https://mimvp.com/sitemap.xml](https://mimvp.com/sitemap.xml)
 
-* 米扑科技 sitemap.html : [http://mimvp.com/sitemap.html](http://mimvp.com/sitemap.html)
+* 米扑科技 sitemap.html : [https://mimvp.com/sitemap.html](https://mimvp.com/sitemap.html)
 
-* 米扑代理 sitemap.xml : [http://proxy.mimvp.com/sitemap.xml](http://proxy.mimvp.com/sitemap.xml)
+* 米扑代理 sitemap.xml : [https://proxy.mimvp.com/sitemap.xml](https://proxy.mimvp.com/sitemap.xml)
 
-* 米扑代理 sitemap.html : [http://proxy.mimvp.com/sitemap.html](http://proxy.mimvp.com/sitemap.html)
+* 米扑代理 sitemap.html : [https://proxy.mimvp.com/sitemap.html](https://proxy.mimvp.com/sitemap.html)
 
 
 <br/>
@@ -395,19 +395,19 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 				<a class="header-nav-item" href="/">首页</a> 
 			</li>
 			<li> 
-				<a class="header-nav-item" target="_blank" href="http://proxy.mimvp.com">米扑代理</a> 
+				<a class="header-nav-item" target="_blank" href="https://proxy.mimvp.com">米扑代理</a> 
 			</li>
 			<li> 
-				<a class="header-nav-item" target="_blank" href="http://domain.mimvp.com">米扑域名</a> 
+				<a class="header-nav-item" target="_blank" href="https://domain.mimvp.com">米扑域名</a> 
 			</li>
 			<li> 
-				<a class="header-nav-item" target="_blank" href="http://pay.mimvp.com">米扑支付</a> 
+				<a class="header-nav-item" target="_blank" href="https://pay.mimvp.com">米扑支付</a> 
 			</li>
 			<li> 
-				<a class="header-nav-item" target="_blank" href="http://money.mimvp.com">米扑财富</a> 
+				<a class="header-nav-item" target="_blank" href="https://money.mimvp.com">米扑财富</a> 
 			</li>
 			<li> 
-				<a class="header-nav-item" target="_blank" href="http://blog.mimvp.com">米扑博客</a> 
+				<a class="header-nav-item" target="_blank" href="https://blog.mimvp.com">米扑博客</a> 
 			</li>
 			<li> 
 				<a class="header-nav-item" href="/hr.php">加入米扑</a> 
@@ -440,11 +440,11 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 					 </div>
 				</a> 
 				<ul id="hidemenu" class="hidemenu" style="display: none;"> 
-					<a class="header-nav-item" target="_blank" href="http://proxy.mimvp.com">米扑代理</a> 
-					<a class="header-nav-item" target="_blank" href="http://domain.mimvp.com">米扑域名</a> 
-					<a class="header-nav-item" target="_blank" href="http://pay.mimvp.com">米扑支付</a> 
-					<a class="header-nav-item" target="_blank" href="http://money.mimvp.com">米扑财富</a>
-					<a class="header-nav-item" target="_blank" href="http://blog.mimvp.com">米扑博客</a> 
+					<a class="header-nav-item" target="_blank" href="https://proxy.mimvp.com">米扑代理</a> 
+					<a class="header-nav-item" target="_blank" href="https://domain.mimvp.com">米扑域名</a> 
+					<a class="header-nav-item" target="_blank" href="https://pay.mimvp.com">米扑支付</a> 
+					<a class="header-nav-item" target="_blank" href="https://money.mimvp.com">米扑财富</a>
+					<a class="header-nav-item" target="_blank" href="https://blog.mimvp.com">米扑博客</a> 
 					<a class="header-nav-item" href="/hr.php">加入米扑</a> 
 				</ul> 
 			</li> 
@@ -581,7 +581,7 @@ function createXSL2Html($xmlFile, $xslFile, $htmlFile, $isopen_htmlfile=false) {
 <div class="about contact_us" style="margin-top:10px; line-height: 36px;">
 	<div style="float: left;">关注：</div>
 	<div class="about contact_us" style="float: left; line-height: 30px; vertical-align: middle;">
-		<a target="_blank" href="http://blog.mimvp.com"><i><img class="img" src="/img/follow_mimvp.png"></i></a> 
+		<a target="_blank" href="https://blog.mimvp.com"><i><img class="img" src="/img/follow_mimvp.png"></i></a> 
 		<a target="_blank" href="http://blog.csdn.net/ithomer"><i><img class="img" src="/img/follow_csdn.png"></i></a>
 		<a target="_blank" href="http://git.oschina.net/mimvp_admin"><i><img class="img" src="/img/follow_oschina.png"></i></a>
 		<a target="_blank" href="https://github.com/mimvp"><i><img class="img" src="/img/follow_github.png"></i></a>
@@ -624,5 +624,5 @@ css和js，最好加上版本号，一来方便代码维护，二来解决客户
 
 ![mimvp-logo.png](./img/mimvp-logo.png)
 
-<a href="http://mimvp.com" target="_blank">http://mimvp.com</a>
+<a href="https://mimvp.com" target="_blank">https://mimvp.com</a>
 
